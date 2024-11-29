@@ -1,0 +1,82 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+
+header { 
+    background: #333; 
+    color: #fff; 
+    padding: 10px 20px; 
+    text-align: center; 
+}
+
+main { 
+    padding: 20px; 
+}
+
+#searchSection, #hotTokensSection, #editTokenSection, #addTokenSection { 
+    margin: 20px auto; 
+    width: 80%; 
+    max-width: 600px; 
+}
+
+button { 
+    padding: 10px 20px; 
+    background: #007BFF; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+}
+
+button:disabled { 
+    background: #ccc; 
+}
+
+textarea, input[type="text"] { 
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px 0; 
+}
+
+.message { 
+    color: green; 
+}
+
+.error { 
+    color: red; 
+}
+
+.tokenInfo { 
+    background: #f4f4f4; 
+    padding: 15px; 
+    margin-top: 20px; 
+    border: 1px solid #ddd; 
+}
+
+.hotTokens { 
+    margin-top: 20px; 
+}
+
+.hotTokens ul { 
+    list-style: none; 
+    padding: 0; 
+}
+
+.hotTokens li { 
+    background: #f4f4f4; 
+    padding: 10px; 
+    margin-bottom: 5px; 
+    border: 1px solid #ddd; 
+}
+
+.editTokenForm, .addTokenForm { 
+    background: #f9f9f9; 
+    padding: 15px; 
+    border-radius: 5px; 
+    border: 1px solid #ddd; 
+}
+
+.editTokenForm button, .addTokenForm button { 
+    background: #28a745; 
+}
