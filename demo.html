@@ -72,6 +72,9 @@
             <button id="addNewTokenButton">Add New Token</button>
             <p id="addNewTokenMessage" class="message"></p>
         </div>
+
+        <button id="clearHistoryButton">Clear Search History</button>
+
     </main>
 
     <script>
@@ -224,6 +227,19 @@
 
         // Initialize the Hot Tokens list on page load
         updateHotTokensList();
+        
+        document.getElementById("clearHistoryButton").addEventListener("click", () => {
+        // clear search history
+        localStorage.removeItem('searchHistory');
+    
+        // clear
+        document.getElementById("hotTokensList").innerHTML = '';
+    
+        // notice
+        alert("Search history has been cleared!");
+    });
+
+        
     </script>
 </body>
 </html>
